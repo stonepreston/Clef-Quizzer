@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="bFo-2g-2V6">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Clef View Controller - Clef Quizzer-->
+        <scene sceneID="7Qb-Bu-x4d">
+            <objects>
+                <viewController id="nX2-Xg-Qfe" customClass="SPClefViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ejr-no-aQn"/>
+                        <viewControllerLayoutGuide type="bottom" id="rgs-up-pOE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mse-PZ-qkG">
+                        <rect key="frame" x="0.0" y="44" width="480" height="276"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEp-b7-ZGC">
+                                <rect key="frame" x="204" y="66" width="73" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Treble Clef">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="trebleClefButtonPressed:" destination="nX2-Xg-Qfe" eventType="touchUpInside" id="Kgp-id-8ZW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rTs-Pb-yJA">
+                                <rect key="frame" x="207" y="104" width="66" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Bass Clef">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="bassClefButtonPressed:" destination="nX2-Xg-Qfe" eventType="touchUpInside" id="gxD-Hf-I6S"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p5C-eR-FxW">
+                                <rect key="frame" x="211" y="142" width="59" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Alto Clef">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="altoClefButtonPressed:" destination="nX2-Xg-Qfe" eventType="touchUpInside" id="FW2-r4-HsH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gtf-oJ-wZT">
+                                <rect key="frame" x="205" y="180" width="70" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Tenor Clef">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tenorClefButtonPressed:" destination="nX2-Xg-Qfe" eventType="touchUpInside" id="CKn-oh-dTC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Gtf-oJ-wZT" firstAttribute="top" secondItem="p5C-eR-FxW" secondAttribute="bottom" constant="8" symbolic="YES" id="NN0-3q-C3M"/>
+                            <constraint firstItem="rTs-Pb-yJA" firstAttribute="centerX" secondItem="LEp-b7-ZGC" secondAttribute="centerX" id="RyE-TH-S8P"/>
+                            <constraint firstItem="LEp-b7-ZGC" firstAttribute="top" secondItem="ejr-no-aQn" secondAttribute="bottom" constant="66" id="X0d-0J-EcD"/>
+                            <constraint firstItem="rTs-Pb-yJA" firstAttribute="top" secondItem="LEp-b7-ZGC" secondAttribute="bottom" constant="8" symbolic="YES" id="cSO-Ns-cqM"/>
+                            <constraint firstItem="LEp-b7-ZGC" firstAttribute="centerX" secondItem="Mse-PZ-qkG" secondAttribute="centerX" id="kva-Q8-ICm"/>
+                            <constraint firstItem="p5C-eR-FxW" firstAttribute="centerX" secondItem="Gtf-oJ-wZT" secondAttribute="centerX" id="uwi-p0-e0f"/>
+                            <constraint firstItem="p5C-eR-FxW" firstAttribute="centerX" secondItem="rTs-Pb-yJA" secondAttribute="centerX" id="vzP-3w-QeH"/>
+                            <constraint firstItem="p5C-eR-FxW" firstAttribute="top" secondItem="rTs-Pb-yJA" secondAttribute="bottom" constant="8" symbolic="YES" id="y5P-mv-TmF"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" title="Clef Quizzer" id="3GU-nh-Beh"/>
+                    <connections>
+                        <segue destination="wHk-UQ-4tS" kind="push" identifier="showNotes" id="w3s-Fe-Feo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nij-Om-hAR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1302" y="-22"/>
+        </scene>
+        <!--Notes View Controller - Notes-->
+        <scene sceneID="7QW-Ts-JnR">
+            <objects>
+                <viewController id="wHk-UQ-4tS" customClass="SPNotesViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ptt-Rx-Pjm"/>
+                        <viewControllerLayoutGuide type="bottom" id="ek7-j0-cdv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BkL-WY-rZQ">
+                        <rect key="frame" x="0.0" y="44" width="480" height="276"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wh3-Rk-uSt">
+                                <rect key="frame" x="161" y="73" width="15" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" image="checkbox_unchecked">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="checkbox_checked"/>
+                                <connections>
+                                    <action selector="linesCheckboxSelected:" destination="wHk-UQ-4tS" eventType="touchUpInside" id="FJI-Da-S0e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Zl-B6-9g3">
+                                <rect key="frame" x="161" y="111" width="15" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" image="checkbox_unchecked">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="checkbox_checked"/>
+                                <connections>
+                                    <action selector="spacesCheckboxSelected:" destination="wHk-UQ-4tS" eventType="touchUpInside" id="14L-ou-3I1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XxG-2P-x5N">
+                                <rect key="frame" x="161" y="149" width="15" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" image="checkbox_unchecked">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="checkbox_checked"/>
+                                <connections>
+                                    <action selector="upperLedgerLinesCheckboxSelected:" destination="wHk-UQ-4tS" eventType="touchUpInside" id="53h-wJ-7oK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ggy-Q2-G6j">
+                                <rect key="frame" x="161" y="187" width="15" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" image="checkbox_unchecked">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="checkbox_checked"/>
+                                <connections>
+                                    <action selector="lowerLedgerLinesCheckboxSelected:" destination="wHk-UQ-4tS" eventType="touchUpInside" id="7ZI-MA-jpJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JRX-W7-YSl">
+                                <rect key="frame" x="184" y="66" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Lines">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="linesButtonPressed:" destination="wHk-UQ-4tS" eventType="touchUpInside" id="EX5-Ik-aRG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUA-1M-mbk">
+                                <rect key="frame" x="184" y="104" width="52" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Spaces">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="spacesButtonPressed:" destination="wHk-UQ-4tS" eventType="touchUpInside" id="Mfd-UN-tCq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHq-Ke-vIj">
+                                <rect key="frame" x="184" y="142" width="136" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Upper Ledger Lines">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="upperLedgerLinesButtonPressed:" destination="wHk-UQ-4tS" eventType="touchUpInside" id="9mV-Nq-GZo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YaP-7b-bGV">
+                                <rect key="frame" x="184" y="180" width="135" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Lower Ledger Lines">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="lowerLedgerLinesButtonPressed:" destination="wHk-UQ-4tS" eventType="touchUpInside" id="kqg-9k-c3j"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JRX-W7-YSl" firstAttribute="leading" secondItem="wh3-Rk-uSt" secondAttribute="trailing" constant="8" id="4YA-H5-hgJ"/>
+                            <constraint firstItem="hUA-1M-mbk" firstAttribute="top" secondItem="JRX-W7-YSl" secondAttribute="bottom" constant="8" id="7Md-EI-v2S"/>
+                            <constraint firstAttribute="centerX" secondItem="hUA-1M-mbk" secondAttribute="centerX" constant="30" id="7Vc-Zy-kEI"/>
+                            <constraint firstItem="cHq-Ke-vIj" firstAttribute="leading" secondItem="XxG-2P-x5N" secondAttribute="trailing" constant="8" id="Afw-Sw-sTg"/>
+                            <constraint firstItem="YaP-7b-bGV" firstAttribute="leading" secondItem="Ggy-Q2-G6j" secondAttribute="trailing" constant="8" id="Agn-hV-gvj"/>
+                            <constraint firstItem="9Zl-B6-9g3" firstAttribute="top" secondItem="wh3-Rk-uSt" secondAttribute="bottom" constant="23" id="JD3-qS-DMa"/>
+                            <constraint firstItem="ek7-j0-cdv" firstAttribute="top" secondItem="YaP-7b-bGV" secondAttribute="bottom" constant="66" id="KdB-N2-zzt"/>
+                            <constraint firstItem="cHq-Ke-vIj" firstAttribute="top" secondItem="hUA-1M-mbk" secondAttribute="bottom" constant="8" id="Qfa-UF-tTB"/>
+                            <constraint firstItem="XxG-2P-x5N" firstAttribute="top" secondItem="9Zl-B6-9g3" secondAttribute="bottom" constant="23" id="Qr1-Fv-Mh0"/>
+                            <constraint firstItem="9Zl-B6-9g3" firstAttribute="top" secondItem="wh3-Rk-uSt" secondAttribute="bottom" constant="23" id="RIl-zt-GZJ"/>
+                            <constraint firstItem="Ggy-Q2-G6j" firstAttribute="top" secondItem="XxG-2P-x5N" secondAttribute="bottom" constant="23" id="aey-Od-Kcs"/>
+                            <constraint firstItem="ek7-j0-cdv" firstAttribute="top" secondItem="Ggy-Q2-G6j" secondAttribute="bottom" constant="74" id="gbg-Vd-ydb"/>
+                            <constraint firstItem="YaP-7b-bGV" firstAttribute="top" secondItem="cHq-Ke-vIj" secondAttribute="bottom" constant="8" id="l65-S2-tRe"/>
+                            <constraint firstAttribute="centerX" secondItem="YaP-7b-bGV" secondAttribute="centerX" constant="-11.5" id="nBi-0B-5JY"/>
+                            <constraint firstItem="YaP-7b-bGV" firstAttribute="top" secondItem="cHq-Ke-vIj" secondAttribute="bottom" constant="8" id="oXy-Nj-FHg"/>
+                            <constraint firstItem="cHq-Ke-vIj" firstAttribute="top" secondItem="hUA-1M-mbk" secondAttribute="bottom" constant="8" id="vyh-Bk-u7Z"/>
+                            <constraint firstAttribute="centerX" secondItem="JRX-W7-YSl" secondAttribute="centerX" constant="37.5" id="yjF-CZ-vtE"/>
+                            <constraint firstItem="hUA-1M-mbk" firstAttribute="leading" secondItem="9Zl-B6-9g3" secondAttribute="trailing" constant="8" id="ykU-N2-pEr"/>
+                            <constraint firstAttribute="centerX" secondItem="cHq-Ke-vIj" secondAttribute="centerX" constant="-12" id="zhR-rc-QxW"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" title="Notes" id="3pr-Ak-DFn">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="9MR-Sh-wck">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="nextButtonPressed:" destination="wHk-UQ-4tS" id="L1d-kf-zgB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="linesCheckbox" destination="wh3-Rk-uSt" id="GD3-7y-R49"/>
+                        <outlet property="lowerLedgerLinesCheckbox" destination="Ggy-Q2-G6j" id="6Wq-tx-DSH"/>
+                        <outlet property="spacesCheckbox" destination="9Zl-B6-9g3" id="12L-uD-JWc"/>
+                        <outlet property="upperLedgerLinesCheckbox" destination="XxG-2P-x5N" id="7Y1-ZV-5Te"/>
+                        <segue destination="Mgr-lr-XZg" kind="push" identifier="showMode" id="4AP-on-Xit"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="53o-11-Hfd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1885" y="-22"/>
+        </scene>
+        <!--Mode View Controller - Mode-->
+        <scene sceneID="4iK-ze-yVu">
+            <objects>
+                <viewController id="Mgr-lr-XZg" customClass="SPModeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KNl-M7-vvS"/>
+                        <viewControllerLayoutGuide type="bottom" id="Icx-UZ-534"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3x9-Xm-vL2">
+                        <rect key="frame" x="0.0" y="44" width="480" height="276"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xrI-SW-Tie">
+                                <rect key="frame" x="205" y="85" width="54" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Training">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="trainingButtonPressed:" destination="Mgr-lr-XZg" eventType="touchUpInside" id="aRh-zv-hgT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zsh-Uo-KYX">
+                                <rect key="frame" x="204" y="123" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Practice">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="practiceButtonPressed:" destination="Mgr-lr-XZg" eventType="touchUpInside" id="s4o-MB-fG5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5s-9v-Mx5">
+                                <rect key="frame" x="198" y="161" width="69" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Challenge">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="challengeButtonPressed:" destination="Mgr-lr-XZg" eventType="touchUpInside" id="RFv-6c-Gqs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zsh-Uo-KYX" firstAttribute="top" secondItem="xrI-SW-Tie" secondAttribute="bottom" constant="8" id="9YD-D0-eh1"/>
+                            <constraint firstAttribute="centerY" secondItem="zsh-Uo-KYX" secondAttribute="centerY" id="UrF-TV-jdI"/>
+                            <constraint firstAttribute="centerX" secondItem="xrI-SW-Tie" secondAttribute="centerX" constant="8" id="XEn-Yu-SBt"/>
+                            <constraint firstAttribute="centerX" secondItem="a5s-9v-Mx5" secondAttribute="centerX" constant="7.5" id="b4b-Kc-y5s"/>
+                            <constraint firstAttribute="centerX" secondItem="zsh-Uo-KYX" secondAttribute="centerX" constant="7.5" id="dOt-Fb-8dX"/>
+                            <constraint firstItem="a5s-9v-Mx5" firstAttribute="top" secondItem="zsh-Uo-KYX" secondAttribute="bottom" constant="8" id="hbb-CU-Z5B"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" title="Mode" id="MiQ-tb-4TK"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="XHH-4p-ncL" kind="push" identifier="showGamePlay" id="Y1I-k6-MBJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yl4-mx-R1x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2458" y="-22"/>
+        </scene>
+        <!--Game Play View Controller-->
+        <scene sceneID="q9D-bm-UAz">
+            <objects>
+                <viewController id="XHH-4p-ncL" customClass="SPGamePlayViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LEg-WS-em2"/>
+                        <viewControllerLayoutGuide type="bottom" id="Nef-aw-gEZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KBE-BB-6Cj" customClass="SKView">
+                        <rect key="frame" x="0.0" y="44" width="480" height="276"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" id="ukL-pY-9H6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mv2-gf-kOE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3020" y="-22"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HLg-Zf-IYw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bFo-2g-2V6" customClass="SPNavigationController" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <toolbarItems/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1Dg-Gs-SDf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nX2-Xg-Qfe" kind="relationship" relationship="rootViewController" id="FCE-fx-M4x"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r0n-vU-qLf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="729" y="-22"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="checkbox_checked" width="15" height="15"/>
+        <image name="checkbox_unchecked" width="15" height="15"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <nil key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

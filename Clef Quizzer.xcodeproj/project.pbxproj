@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A10B89319911EB2006CDFE3 /* SPGamePlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A10B89219911EB2006CDFE3 /* SPGamePlayViewController.m */; };
+		3A25D0CA1991D53D00D3FE87 /* SPChallengeOverScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A25D0C91991D53D00D3FE87 /* SPChallengeOverScene.m */; };
+		3A7D6C0519913381002D35FA /* SPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7D6C0419913381002D35FA /* SPNavigationController.m */; };
+		3ACAF44819868E700042285D /* SPTitleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACAF44719868E700042285D /* SPTitleScene.m */; };
+		3ACAF44B198698370042285D /* AGSpriteButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACAF44A198698370042285D /* AGSpriteButton.m */; };
+		3ACAF44E19869BCB0042285D /* SPNoteRangeScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACAF44D19869BCB0042285D /* SPNoteRangeScene.m */; };
+		3ACAF4511986A0130042285D /* SPLabelButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACAF4501986A0130042285D /* SPLabelButton.m */; };
+		3ACAF4541987EFE90042285D /* SPModeScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACAF4531987EFE90042285D /* SPModeScene.m */; };
+		3ACAF45A198893170042285D /* SPTrainingScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACAF459198893170042285D /* SPTrainingScene.m */; };
+		3ACAF45D19889F060042285D /* SPPracticeScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACAF45C19889F060042285D /* SPPracticeScene.m */; };
+		3ACAF4601988A3F70042285D /* SPChallengeScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACAF45F1988A3F70042285D /* SPChallengeScene.m */; };
+		3ACAF4631988AA480042285D /* SPChallengeHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACAF4621988AA480042285D /* SPChallengeHud.m */; };
+		3ACAF4661988B0270042285D /* SPPracticeHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACAF4651988B0270042285D /* SPPracticeHud.m */; };
+		3ACAF469198A8B900042285D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ACB03F91980236D00C1DE8C /* Foundation.framework */; };
+		3ACAF46C198FBB670042285D /* SPClefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACAF46B198FBB670042285D /* SPClefViewController.m */; };
+		3ACAF46F198FC7D70042285D /* SPNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACAF46E198FC7D70042285D /* SPNotesViewController.m */; };
+		3ACAF472198FDD3F0042285D /* SPGameState.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACAF471198FDD3F0042285D /* SPGameState.m */; };
+		3ACAF475198FF1CE0042285D /* SPModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACAF474198FF1CE0042285D /* SPModeViewController.m */; };
+		3ACB03FC1980236D00C1DE8C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ACB03FB1980236D00C1DE8C /* CoreGraphics.framework */; };
+		3ACB03FE1980236D00C1DE8C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ACB03FD1980236D00C1DE8C /* UIKit.framework */; };
+		3ACB04001980236D00C1DE8C /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ACB03FF1980236D00C1DE8C /* SpriteKit.framework */; };
+		3ACB04061980236D00C1DE8C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3ACB04041980236D00C1DE8C /* InfoPlist.strings */; };
+		3ACB04081980236D00C1DE8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACB04071980236D00C1DE8C /* main.m */; };
+		3ACB040C1980236D00C1DE8C /* SPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACB040B1980236D00C1DE8C /* SPAppDelegate.m */; };
+		3ACB040F1980236D00C1DE8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACB040D1980236D00C1DE8C /* Main.storyboard */; };
+		3ACB04201980236D00C1DE8C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ACB041F1980236D00C1DE8C /* XCTest.framework */; };
+		3ACB04211980236D00C1DE8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ACB03F91980236D00C1DE8C /* Foundation.framework */; };
+		3ACB04221980236D00C1DE8C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ACB03FD1980236D00C1DE8C /* UIKit.framework */; };
+		3ACB042A1980236D00C1DE8C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3ACB04281980236D00C1DE8C /* InfoPlist.strings */; };
+		3ACB042C1980236D00C1DE8C /* Clef_QuizzerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACB042B1980236D00C1DE8C /* Clef_QuizzerTests.m */; };
+		3ACB04371980239600C1DE8C /* SPGamePlayScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACB04361980239600C1DE8C /* SPGamePlayScene.m */; };
+		3ACB04391980249A00C1DE8C /* Sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 3ACB04381980249A00C1DE8C /* Sprites.atlas */; };
+		3ACB043C1980258E00C1DE8C /* SPUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACB043B1980258E00C1DE8C /* SPUtil.m */; };
+		3ACB0442198026BB00C1DE8C /* SPBackgroundNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACB0441198026BB00C1DE8C /* SPBackgroundNode.m */; };
+		3ACB04451980360D00C1DE8C /* SPNoteNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACB04441980360D00C1DE8C /* SPNoteNode.m */; };
+		3ACB04501985F99800C1DE8C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ACB044F1985F99800C1DE8C /* Images.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3ACB04231980236D00C1DE8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3ACB03EE1980236D00C1DE8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3ACB03F51980236D00C1DE8C;
+			remoteInfo = "Clef Quizzer";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3A10B89119911EB2006CDFE3 /* SPGamePlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPGamePlayViewController.h; sourceTree = "<group>"; };
+		3A10B89219911EB2006CDFE3 /* SPGamePlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPGamePlayViewController.m; sourceTree = "<group>"; };
+		3A25D0C81991D53D00D3FE87 /* SPChallengeOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPChallengeOverScene.h; sourceTree = "<group>"; };
+		3A25D0C91991D53D00D3FE87 /* SPChallengeOverScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPChallengeOverScene.m; sourceTree = "<group>"; };
+		3A7D6C0319913381002D35FA /* SPNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPNavigationController.h; sourceTree = "<group>"; };
+		3A7D6C0419913381002D35FA /* SPNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPNavigationController.m; sourceTree = "<group>"; };
+		3ACAF44619868E700042285D /* SPTitleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTitleScene.h; sourceTree = "<group>"; };
+		3ACAF44719868E700042285D /* SPTitleScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTitleScene.m; sourceTree = "<group>"; };
+		3ACAF449198698370042285D /* AGSpriteButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGSpriteButton.h; sourceTree = "<group>"; };
+		3ACAF44A198698370042285D /* AGSpriteButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGSpriteButton.m; sourceTree = "<group>"; };
+		3ACAF44C19869BCB0042285D /* SPNoteRangeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPNoteRangeScene.h; sourceTree = "<group>"; };
+		3ACAF44D19869BCB0042285D /* SPNoteRangeScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPNoteRangeScene.m; sourceTree = "<group>"; };
+		3ACAF44F1986A0130042285D /* SPLabelButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPLabelButton.h; sourceTree = "<group>"; };
+		3ACAF4501986A0130042285D /* SPLabelButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPLabelButton.m; sourceTree = "<group>"; };
+		3ACAF4521987EFE90042285D /* SPModeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPModeScene.h; sourceTree = "<group>"; };
+		3ACAF4531987EFE90042285D /* SPModeScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPModeScene.m; sourceTree = "<group>"; };
+		3ACAF458198893170042285D /* SPTrainingScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTrainingScene.h; path = ../SPTrainingScene.h; sourceTree = "<group>"; };
+		3ACAF459198893170042285D /* SPTrainingScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPTrainingScene.m; path = ../SPTrainingScene.m; sourceTree = "<group>"; };
+		3ACAF45B19889F060042285D /* SPPracticeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPPracticeScene.h; sourceTree = "<group>"; };
+		3ACAF45C19889F060042285D /* SPPracticeScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPPracticeScene.m; sourceTree = "<group>"; };
+		3ACAF45E1988A3F70042285D /* SPChallengeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPChallengeScene.h; sourceTree = "<group>"; };
+		3ACAF45F1988A3F70042285D /* SPChallengeScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPChallengeScene.m; sourceTree = "<group>"; };
+		3ACAF4611988AA480042285D /* SPChallengeHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPChallengeHud.h; sourceTree = "<group>"; };
+		3ACAF4621988AA480042285D /* SPChallengeHud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPChallengeHud.m; sourceTree = "<group>"; };
+		3ACAF4641988B0270042285D /* SPPracticeHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPPracticeHud.h; sourceTree = "<group>"; };
+		3ACAF4651988B0270042285D /* SPPracticeHud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPPracticeHud.m; sourceTree = "<group>"; };
+		3ACAF467198A7BFC0042285D /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		3ACAF46A198FBB670042285D /* SPClefViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPClefViewController.h; sourceTree = "<group>"; };
+		3ACAF46B198FBB670042285D /* SPClefViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPClefViewController.m; sourceTree = "<group>"; };
+		3ACAF46D198FC7D70042285D /* SPNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPNotesViewController.h; sourceTree = "<group>"; };
+		3ACAF46E198FC7D70042285D /* SPNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPNotesViewController.m; sourceTree = "<group>"; };
+		3ACAF470198FDD3F0042285D /* SPGameState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPGameState.h; sourceTree = "<group>"; };
+		3ACAF471198FDD3F0042285D /* SPGameState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPGameState.m; sourceTree = "<group>"; };
+		3ACAF473198FF1CE0042285D /* SPModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPModeViewController.h; path = ../SPModeViewController.h; sourceTree = "<group>"; };
+		3ACAF474198FF1CE0042285D /* SPModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPModeViewController.m; path = ../SPModeViewController.m; sourceTree = "<group>"; };
+		3ACB03F61980236D00C1DE8C /* Clef Quizzer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clef Quizzer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ACB03F91980236D00C1DE8C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3ACB03FB1980236D00C1DE8C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3ACB03FD1980236D00C1DE8C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3ACB03FF1980236D00C1DE8C /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		3ACB04031980236D00C1DE8C /* Clef Quizzer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Clef Quizzer-Info.plist"; sourceTree = "<group>"; };
+		3ACB04051980236D00C1DE8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3ACB04071980236D00C1DE8C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3ACB04091980236D00C1DE8C /* Clef Quizzer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Clef Quizzer-Prefix.pch"; sourceTree = "<group>"; };
+		3ACB040A1980236D00C1DE8C /* SPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPAppDelegate.h; sourceTree = "<group>"; };
+		3ACB040B1980236D00C1DE8C /* SPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPAppDelegate.m; sourceTree = "<group>"; };
+		3ACB040E1980236D00C1DE8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3ACB041E1980236D00C1DE8C /* Clef QuizzerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Clef QuizzerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ACB041F1980236D00C1DE8C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3ACB04271980236D00C1DE8C /* Clef QuizzerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Clef QuizzerTests-Info.plist"; sourceTree = "<group>"; };
+		3ACB04291980236D00C1DE8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3ACB042B1980236D00C1DE8C /* Clef_QuizzerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Clef_QuizzerTests.m; sourceTree = "<group>"; };
+		3ACB04351980239600C1DE8C /* SPGamePlayScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPGamePlayScene.h; path = ../SPGamePlayScene.h; sourceTree = "<group>"; };
+		3ACB04361980239600C1DE8C /* SPGamePlayScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPGamePlayScene.m; path = ../SPGamePlayScene.m; sourceTree = "<group>"; };
+		3ACB04381980249A00C1DE8C /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Sprites.atlas; sourceTree = "<group>"; };
+		3ACB043A1980258E00C1DE8C /* SPUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPUtil.h; path = ../SPUtil.h; sourceTree = "<group>"; };
+		3ACB043B1980258E00C1DE8C /* SPUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPUtil.m; path = ../SPUtil.m; sourceTree = "<group>"; };
+		3ACB0440198026BB00C1DE8C /* SPBackgroundNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPBackgroundNode.h; sourceTree = "<group>"; };
+		3ACB0441198026BB00C1DE8C /* SPBackgroundNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPBackgroundNode.m; sourceTree = "<group>"; };
+		3ACB04431980360D00C1DE8C /* SPNoteNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPNoteNode.h; sourceTree = "<group>"; };
+		3ACB04441980360D00C1DE8C /* SPNoteNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPNoteNode.m; sourceTree = "<group>"; };
+		3ACB044F1985F99800C1DE8C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3ACB03F31980236D00C1DE8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ACAF469198A8B900042285D /* Foundation.framework in Frameworks */,
+				3ACB03FC1980236D00C1DE8C /* CoreGraphics.framework in Frameworks */,
+				3ACB03FE1980236D00C1DE8C /* UIKit.framework in Frameworks */,
+				3ACB04001980236D00C1DE8C /* SpriteKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3ACB041B1980236D00C1DE8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ACB04201980236D00C1DE8C /* XCTest.framework in Frameworks */,
+				3ACB04221980236D00C1DE8C /* UIKit.framework in Frameworks */,
+				3ACB04211980236D00C1DE8C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3ACAF4761990023D0042285D /* Menus */ = {
+			isa = PBXGroup;
+			children = (
+				3ACB040D1980236D00C1DE8C /* Main.storyboard */,
+				3A10B89119911EB2006CDFE3 /* SPGamePlayViewController.h */,
+				3A10B89219911EB2006CDFE3 /* SPGamePlayViewController.m */,
+				3ACAF473198FF1CE0042285D /* SPModeViewController.h */,
+				3ACAF474198FF1CE0042285D /* SPModeViewController.m */,
+				3ACAF46D198FC7D70042285D /* SPNotesViewController.h */,
+				3ACAF46E198FC7D70042285D /* SPNotesViewController.m */,
+				3ACAF46A198FBB670042285D /* SPClefViewController.h */,
+				3ACAF46B198FBB670042285D /* SPClefViewController.m */,
+				3A7D6C0319913381002D35FA /* SPNavigationController.h */,
+				3A7D6C0419913381002D35FA /* SPNavigationController.m */,
+			);
+			name = Menus;
+			sourceTree = "<group>";
+		};
+		3ACAF4771990027F0042285D /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				3ACB04431980360D00C1DE8C /* SPNoteNode.h */,
+				3ACB04441980360D00C1DE8C /* SPNoteNode.m */,
+				3ACB0440198026BB00C1DE8C /* SPBackgroundNode.h */,
+				3ACB0441198026BB00C1DE8C /* SPBackgroundNode.m */,
+				3ACAF478199002960042285D /* HUD */,
+			);
+			name = Nodes;
+			sourceTree = "<group>";
+		};
+		3ACAF478199002960042285D /* HUD */ = {
+			isa = PBXGroup;
+			children = (
+				3ACAF4641988B0270042285D /* SPPracticeHud.h */,
+				3ACAF4651988B0270042285D /* SPPracticeHud.m */,
+				3ACAF4611988AA480042285D /* SPChallengeHud.h */,
+				3ACAF4621988AA480042285D /* SPChallengeHud.m */,
+			);
+			name = HUD;
+			sourceTree = "<group>";
+		};
+		3ACAF479199002CC0042285D /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				3ACAF458198893170042285D /* SPTrainingScene.h */,
+				3ACAF459198893170042285D /* SPTrainingScene.m */,
+				3ACAF45B19889F060042285D /* SPPracticeScene.h */,
+				3ACAF45C19889F060042285D /* SPPracticeScene.m */,
+				3A25D0C81991D53D00D3FE87 /* SPChallengeOverScene.h */,
+				3A25D0C91991D53D00D3FE87 /* SPChallengeOverScene.m */,
+				3ACAF45E1988A3F70042285D /* SPChallengeScene.h */,
+				3ACAF45F1988A3F70042285D /* SPChallengeScene.m */,
+				3ACB04351980239600C1DE8C /* SPGamePlayScene.h */,
+				3ACB04361980239600C1DE8C /* SPGamePlayScene.m */,
+				3ACAF44619868E700042285D /* SPTitleScene.h */,
+				3ACAF44719868E700042285D /* SPTitleScene.m */,
+				3ACAF44C19869BCB0042285D /* SPNoteRangeScene.h */,
+				3ACAF44D19869BCB0042285D /* SPNoteRangeScene.m */,
+				3ACAF4521987EFE90042285D /* SPModeScene.h */,
+				3ACAF4531987EFE90042285D /* SPModeScene.m */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		3ACB03ED1980236D00C1DE8C = {
+			isa = PBXGroup;
+			children = (
+				3ACB04011980236D00C1DE8C /* Clef Quizzer */,
+				3ACB04251980236D00C1DE8C /* Clef QuizzerTests */,
+				3ACB03F81980236D00C1DE8C /* Frameworks */,
+				3ACB03F71980236D00C1DE8C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3ACB03F71980236D00C1DE8C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3ACB03F61980236D00C1DE8C /* Clef Quizzer.app */,
+				3ACB041E1980236D00C1DE8C /* Clef QuizzerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3ACB03F81980236D00C1DE8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3ACAF467198A7BFC0042285D /* iAd.framework */,
+				3ACB03F91980236D00C1DE8C /* Foundation.framework */,
+				3ACB03FB1980236D00C1DE8C /* CoreGraphics.framework */,
+				3ACB03FD1980236D00C1DE8C /* UIKit.framework */,
+				3ACB03FF1980236D00C1DE8C /* SpriteKit.framework */,
+				3ACB041F1980236D00C1DE8C /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3ACB04011980236D00C1DE8C /* Clef Quizzer */ = {
+			isa = PBXGroup;
+			children = (
+				3ACAF479199002CC0042285D /* Scenes */,
+				3ACAF4771990027F0042285D /* Nodes */,
+				3ACAF4761990023D0042285D /* Menus */,
+				3ACB043A1980258E00C1DE8C /* SPUtil.h */,
+				3ACB043B1980258E00C1DE8C /* SPUtil.m */,
+				3ACAF470198FDD3F0042285D /* SPGameState.h */,
+				3ACAF471198FDD3F0042285D /* SPGameState.m */,
+				3ACB04381980249A00C1DE8C /* Sprites.atlas */,
+				3ACB044F1985F99800C1DE8C /* Images.xcassets */,
+				3ACB04021980236D00C1DE8C /* Supporting Files */,
+			);
+			path = "Clef Quizzer";
+			sourceTree = "<group>";
+		};
+		3ACB04021980236D00C1DE8C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3ACAF44F1986A0130042285D /* SPLabelButton.h */,
+				3ACAF4501986A0130042285D /* SPLabelButton.m */,
+				3ACAF449198698370042285D /* AGSpriteButton.h */,
+				3ACAF44A198698370042285D /* AGSpriteButton.m */,
+				3ACB040A1980236D00C1DE8C /* SPAppDelegate.h */,
+				3ACB040B1980236D00C1DE8C /* SPAppDelegate.m */,
+				3ACB04031980236D00C1DE8C /* Clef Quizzer-Info.plist */,
+				3ACB04041980236D00C1DE8C /* InfoPlist.strings */,
+				3ACB04071980236D00C1DE8C /* main.m */,
+				3ACB04091980236D00C1DE8C /* Clef Quizzer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3ACB04251980236D00C1DE8C /* Clef QuizzerTests */ = {
+			isa = PBXGroup;
+			children = (
+				3ACB042B1980236D00C1DE8C /* Clef_QuizzerTests.m */,
+				3ACB04261980236D00C1DE8C /* Supporting Files */,
+			);
+			path = "Clef QuizzerTests";
+			sourceTree = "<group>";
+		};
+		3ACB04261980236D00C1DE8C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3ACB04271980236D00C1DE8C /* Clef QuizzerTests-Info.plist */,
+				3ACB04281980236D00C1DE8C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3ACB03F51980236D00C1DE8C /* Clef Quizzer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3ACB042F1980236D00C1DE8C /* Build configuration list for PBXNativeTarget "Clef Quizzer" */;
+			buildPhases = (
+				3ACB03F21980236D00C1DE8C /* Sources */,
+				3ACB03F31980236D00C1DE8C /* Frameworks */,
+				3ACB03F41980236D00C1DE8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Clef Quizzer";
+			productName = "Clef Quizzer";
+			productReference = 3ACB03F61980236D00C1DE8C /* Clef Quizzer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3ACB041D1980236D00C1DE8C /* Clef QuizzerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3ACB04321980236D00C1DE8C /* Build configuration list for PBXNativeTarget "Clef QuizzerTests" */;
+			buildPhases = (
+				3ACB041A1980236D00C1DE8C /* Sources */,
+				3ACB041B1980236D00C1DE8C /* Frameworks */,
+				3ACB041C1980236D00C1DE8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3ACB04241980236D00C1DE8C /* PBXTargetDependency */,
+			);
+			name = "Clef QuizzerTests";
+			productName = "Clef QuizzerTests";
+			productReference = 3ACB041E1980236D00C1DE8C /* Clef QuizzerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3ACB03EE1980236D00C1DE8C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SP;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Stone Preston";
+				TargetAttributes = {
+					3ACB041D1980236D00C1DE8C = {
+						TestTargetID = 3ACB03F51980236D00C1DE8C;
+					};
+				};
+			};
+			buildConfigurationList = 3ACB03F11980236D00C1DE8C /* Build configuration list for PBXProject "Clef Quizzer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3ACB03ED1980236D00C1DE8C;
+			productRefGroup = 3ACB03F71980236D00C1DE8C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3ACB03F51980236D00C1DE8C /* Clef Quizzer */,
+				3ACB041D1980236D00C1DE8C /* Clef QuizzerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3ACB03F41980236D00C1DE8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ACB04061980236D00C1DE8C /* InfoPlist.strings in Resources */,
+				3ACB04501985F99800C1DE8C /* Images.xcassets in Resources */,
+				3ACB040F1980236D00C1DE8C /* Main.storyboard in Resources */,
+				3ACB04391980249A00C1DE8C /* Sprites.atlas in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3ACB041C1980236D00C1DE8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ACB042A1980236D00C1DE8C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3ACB03F21980236D00C1DE8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A7D6C0519913381002D35FA /* SPNavigationController.m in Sources */,
+				3A10B89319911EB2006CDFE3 /* SPGamePlayViewController.m in Sources */,
+				3ACB043C1980258E00C1DE8C /* SPUtil.m in Sources */,
+				3ACB0442198026BB00C1DE8C /* SPBackgroundNode.m in Sources */,
+				3ACAF4631988AA480042285D /* SPChallengeHud.m in Sources */,
+				3ACB04081980236D00C1DE8C /* main.m in Sources */,
+				3ACAF475198FF1CE0042285D /* SPModeViewController.m in Sources */,
+				3ACAF44819868E700042285D /* SPTitleScene.m in Sources */,
+				3ACAF44B198698370042285D /* AGSpriteButton.m in Sources */,
+				3A25D0CA1991D53D00D3FE87 /* SPChallengeOverScene.m in Sources */,
+				3ACAF44E19869BCB0042285D /* SPNoteRangeScene.m in Sources */,
+				3ACAF45A198893170042285D /* SPTrainingScene.m in Sources */,
+				3ACB04371980239600C1DE8C /* SPGamePlayScene.m in Sources */,
+				3ACAF4601988A3F70042285D /* SPChallengeScene.m in Sources */,
+				3ACAF4661988B0270042285D /* SPPracticeHud.m in Sources */,
+				3ACAF4511986A0130042285D /* SPLabelButton.m in Sources */,
+				3ACAF45D19889F060042285D /* SPPracticeScene.m in Sources */,
+				3ACB04451980360D00C1DE8C /* SPNoteNode.m in Sources */,
+				3ACAF472198FDD3F0042285D /* SPGameState.m in Sources */,
+				3ACAF46F198FC7D70042285D /* SPNotesViewController.m in Sources */,
+				3ACAF46C198FBB670042285D /* SPClefViewController.m in Sources */,
+				3ACAF4541987EFE90042285D /* SPModeScene.m in Sources */,
+				3ACB040C1980236D00C1DE8C /* SPAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3ACB041A1980236D00C1DE8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ACB042C1980236D00C1DE8C /* Clef_QuizzerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3ACB04241980236D00C1DE8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3ACB03F51980236D00C1DE8C /* Clef Quizzer */;
+			targetProxy = 3ACB04231980236D00C1DE8C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3ACB04041980236D00C1DE8C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3ACB04051980236D00C1DE8C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3ACB040D1980236D00C1DE8C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3ACB040E1980236D00C1DE8C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3ACB04281980236D00C1DE8C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3ACB04291980236D00C1DE8C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3ACB042D1980236D00C1DE8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3ACB042E1980236D00C1DE8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3ACB04301980236D00C1DE8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Clef Quizzer/Clef Quizzer-Prefix.pch";
+				INFOPLIST_FILE = "Clef Quizzer/Clef Quizzer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3ACB04311980236D00C1DE8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Clef Quizzer/Clef Quizzer-Prefix.pch";
+				INFOPLIST_FILE = "Clef Quizzer/Clef Quizzer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3ACB04331980236D00C1DE8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Clef Quizzer.app/Clef Quizzer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Clef Quizzer/Clef Quizzer-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Clef QuizzerTests/Clef QuizzerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		3ACB04341980236D00C1DE8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Clef Quizzer.app/Clef Quizzer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Clef Quizzer/Clef Quizzer-Prefix.pch";
+				INFOPLIST_FILE = "Clef QuizzerTests/Clef QuizzerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3ACB03F11980236D00C1DE8C /* Build configuration list for PBXProject "Clef Quizzer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3ACB042D1980236D00C1DE8C /* Debug */,
+				3ACB042E1980236D00C1DE8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3ACB042F1980236D00C1DE8C /* Build configuration list for PBXNativeTarget "Clef Quizzer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3ACB04301980236D00C1DE8C /* Debug */,
+				3ACB04311980236D00C1DE8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3ACB04321980236D00C1DE8C /* Build configuration list for PBXNativeTarget "Clef QuizzerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3ACB04331980236D00C1DE8C /* Debug */,
+				3ACB04341980236D00C1DE8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3ACB03EE1980236D00C1DE8C /* Project object */;
+}
