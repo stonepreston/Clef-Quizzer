@@ -14,15 +14,7 @@
 
 + (instancetype)noteOfType:(NSInteger)type forClef:(SPClefType)clef inFrame:(CGRect)frame colored:(BOOL)colored;
 
-//+ (instancetype)randomLineNoteForClef:(SPClefType)clef inFrame:(CGRect)frame colored:(BOOL)colored;
-//
-//+ (instancetype)randomSpaceNoteForClef:(SPClefType)clef inFrame:(CGRect)frame colored:(BOOL)colored;
-//
-//+ (instancetype)randomUpperLedgerLineNoteForClef:(SPClefType)clef inFrame:(CGRect)frame colored:(BOOL)colored;
-//
-//+ (instancetype)randomLowerLedgerLineNoteForClef:(SPClefType)clef inFrame:(CGRect)frame colored:(BOOL)colored;
-//
-//+ (instancetype)randomNoteForClef:(SPClefType)clef inFrame:(CGRect)frame colored:(BOOL)colored;
+
 
 @property (nonatomic) SPClefType clefType;
 @property (nonatomic) NSInteger noteType;

@@ -22,6 +22,7 @@
     
     [super viewWillAppear:animated];
     
+    //clears all checkboxes
     [self resetCheckboxes];
     
     //check relevant checkboxes
@@ -56,6 +57,7 @@
     }
 }
 
+//clears the checkboxes
 - (void)resetCheckboxes {
     
     self.linesCheckbox.selected = NO;
@@ -64,14 +66,14 @@
     self.lowerLedgerLinesCheckbox.selected = NO;
 }
 
+//hides the status bars
 - (BOOL)prefersStatusBarHidden {
     
     return YES;
 }
 
 
-
-
+//called when the user taps the lines checkbox
 - (IBAction)linesCheckboxSelected:(id)sender {
     
     UIButton *button = sender;
@@ -80,6 +82,7 @@
     
 }
 
+//called when the user taps the spaces checkbox
 - (IBAction)spacesCheckboxSelected:(id)sender {
     
     UIButton *button = sender;
@@ -88,6 +91,7 @@
 
 }
 
+//called when the user taps the upper ledger lines checkbox
 - (IBAction)upperLedgerLinesCheckboxSelected:(id)sender {
     
     UIButton *button = sender;
@@ -98,6 +102,7 @@
     
 }
 
+//called when the user selects the lower ledger lines checkbox
 - (IBAction)lowerLedgerLinesCheckboxSelected:(id)sender {
     
     UIButton *button = sender;
@@ -106,28 +111,33 @@
     
 }
 
+//called when the user taps the lines button
 - (IBAction)linesButtonPressed:(id)sender {
     
     [self handleCheckboxPressedForButton:self.linesCheckbox andNoteRange:SPNoteRangeLines];
 }
 
+//called when the user taps the spaces button
 - (IBAction)spacesButtonPressed:(id)sender {
     
     [self handleCheckboxPressedForButton:self.spacesCheckbox andNoteRange:SPNoteRangeSpaces];
 }
 
+
+//called when the user taps the upper ledger lines button
 - (IBAction)upperLedgerLinesButtonPressed:(id)sender {
     
     [self handleCheckboxPressedForButton:self.upperLedgerLinesCheckbox andNoteRange:SPNoteRangeUpperLedgerLines];
 }
 
+//called when the user taps the lower ledger lines button
 - (IBAction)lowerLedgerLinesButtonPressed:(id)sender {
     
     [self handleCheckboxPressedForButton:self.lowerLedgerLinesCheckbox andNoteRange:SPNoteRangeLowerLedgerLines];
 }
 
 
-
+//checks the appropriate checkbox when a button is pressed
 - (void)handleCheckboxPressedForButton:(UIButton *)button andNoteRange:(SPNoteRange)noteRange {
     
     
@@ -163,16 +173,19 @@
     
 }
 
+//called when the user taps the next button
 - (IBAction)nextButtonPressed:(id)sender {
     
     //check to make sure the noteRange set is not empty
     if ([SPGameState sharedInstance].noteRangeNumbers.count == 0) {
         
+        //displays an alert view
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Oops" message:@"You must select at least one category of notes" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         
         [alertView show];
     } else {
         
+        //segues to the mode view controller
         [self performSegueWithIdentifier:@"showMode" sender:self];
     }
 }

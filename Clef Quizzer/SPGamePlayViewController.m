@@ -31,6 +31,7 @@
     [self createSceneForMode:[SPGameState sharedInstance].mode];
 }
 
+//creates the scene depending on the mode the user selected
 - (void)createSceneForMode:(SPMode)mode {
     
     //Configure the view.
@@ -44,7 +45,7 @@
     
     if (mode == SPModeTraining) {
         
-        // Create and configure the scene.
+        // Create and configure the training scene.
         scene = [[SPTrainingScene alloc] initWithSize:skView.frame.size];
         scene.scaleMode = SKSceneScaleModeAspectFill;
         
@@ -54,7 +55,7 @@
         
     } else if (mode == SPModePractice) {
         
-        // Create and configure the scene.
+        // Create and configure the practice scene.
         scene = [[SPPracticeScene alloc] initWithSize:skView.frame.size];
         scene.scaleMode = SKSceneScaleModeAspectFill;
         
@@ -64,7 +65,7 @@
         
     } else {
         
-        // Create and configure the scene.
+        // Create and configure challenge the scene.
         scene = [[SPChallengeScene alloc] initWithSize:skView.frame.size];
         scene.scaleMode = SKSceneScaleModeAspectFill;
         
@@ -76,6 +77,7 @@
     
 }
 
+//hides the status bar
 - (BOOL)prefersStatusBarHidden {
     
     return YES;

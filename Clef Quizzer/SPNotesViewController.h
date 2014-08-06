@@ -9,8 +9,9 @@
 
 
 @interface SPNotesViewController : UIViewController
-- (IBAction)linesCheckboxSelected:(id)sender;
 
+//Checkbox and button IBActions
+- (IBAction)linesCheckboxSelected:(id)sender;
 - (IBAction)spacesCheckboxSelected:(id)sender;
 - (IBAction)upperLedgerLinesCheckboxSelected:(id)sender;
 - (IBAction)lowerLedgerLinesCheckboxSelected:(id)sender;
@@ -20,9 +21,10 @@
 - (IBAction)lowerLedgerLinesButtonPressed:(id)sender;
 
 
-
+//next bar button item IBAction
 - (IBAction)nextButtonPressed:(id)sender;
 
+//checkbox button outlets
 @property (weak, nonatomic) IBOutlet UIButton *linesCheckbox;
 @property (weak, nonatomic) IBOutlet UIButton *spacesCheckbox;
 @property (weak, nonatomic) IBOutlet UIButton *upperLedgerLinesCheckbox;

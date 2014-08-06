@@ -14,15 +14,23 @@
 
 +(instancetype)loadInstance
 {
+    //get the saved data from the file
     NSData* decodedData = [NSData dataWithContentsOfFile: [SPGameState filePath]];
+    
+    //if there was data
     if (decodedData) {
+        
+        //load the game state
         SPGameState *gameState = [NSKeyedUnarchiver unarchiveObjectWithData:decodedData];
+        
+        //initialize the score, lives, and note range
         gameState.score = 0;
         gameState.lives = SPMaxLives;
         gameState.noteRangeNumbers = [[NSMutableSet alloc] init];
         return gameState;
     }
     
+    //if there was no saved state
     SPGameState *gameState = [[SPGameState alloc] init];
     gameState.score = 0;
     gameState.lives = SPMaxLives;
@@ -30,6 +38,7 @@
     return gameState;
 }
 
+//returns a singleton game state object
 + (instancetype)sharedInstance {
     
     
@@ -58,13 +67,8 @@
     
 }
 
-//+ (instancetype)loadInstance {
-//    
-//    SPGameState *gameState = [[SPGameState alloc] init];
-//    gameState.noteRangeNumbers = [[NSMutableSet alloc] init];
-//    return gameState;
-//}
 
+//used the get the file path of the saved data
 +(NSString*)filePath
 {
     static NSString* filePath = nil;
@@ -76,12 +80,14 @@
     return filePath;
 }
 
+//saves the highscore to disk
 - (void)save {
     
     NSData* encodedData = [NSKeyedArchiver archivedDataWithRootObject: self];
     [encodedData writeToFile:[SPGameState filePath] atomically:YES];
 }
 
+//resets the score and lives
 - (void)reset {
     
     self.score = 0;

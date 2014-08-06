@@ -10,6 +10,7 @@
 
 @implementation SPPracticeHud
 
+//creates the practice hud
 + (instancetype)practiceHudAtPosition:(CGPoint)position inClef:(SPClefType)clef inFrame:(CGRect)frame {
     
     SPPracticeHud *hud = [self node];
@@ -17,8 +18,8 @@
     hud.position = position;
     hud.name = @"PracticeHud";
     
-    //setup score label
     
+    //setup the correct label
     hud.numberCorrectLabel = [SKLabelNode labelNodeWithFontNamed:@"Futura-CondensedMedium"];
     hud.numberCorrectLabel.name = @"NumberCorrectLabel";
     hud.numberCorrectLabel.fontColor = [SKColor blackColor];
@@ -28,6 +29,7 @@
     hud.numberCorrectLabel.position = CGPointMake(frame.size.width - 20, -20);
     [hud addChild:hud.numberCorrectLabel];
     
+    //setup the incorrect label
     hud.numberIncorrectLabel = [SKLabelNode labelNodeWithFontNamed:@"Futura-CondensedMedium"];
     hud.numberIncorrectLabel.name = @"NumberIncorrectLabel";
     hud.numberIncorrectLabel.fontColor = [SKColor blackColor];
@@ -44,6 +46,7 @@
     
 }
 
+//increases the correct label and number correct by 1
 - (void)increaseCorrectLabel {
     
     self.numberCorrect += 1;
@@ -51,6 +54,7 @@
     
 }
 
+//increases the incorrect label and number incorrect by 1
 - (void)increaseIncorrectLabel {
     
     self.numberIncorrect += 1;

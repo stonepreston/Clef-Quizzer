@@ -71,9 +71,10 @@
     
 }
 
+//add points to the game state score and update label
 - (void)addPoints {
     
-    //add points to the game state score and update label
+    
     [SPGameState sharedInstance].score += SPPointsPerCorrectAnswer;
     self.scoreLabel.text = [NSString stringWithFormat:@"%ld", (long)[SPGameState sharedInstance].score];
     

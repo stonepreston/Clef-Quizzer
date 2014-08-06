@@ -14,6 +14,7 @@
 
 - (id)initWithSize:(CGSize)size {
     
+    //uses the SPGamePlay scene init method
     if (self = [super initWithSize:size colored:YES]) {
         /* Setup your scene here */
        

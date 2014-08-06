@@ -13,6 +13,7 @@
 
 + (instancetype)noteOfType:(NSInteger)type forClef:(SPClefType)clef inFrame:(CGRect)frame colored:(BOOL)colored {
     
+    //setup the note
     NSString *imageName = [NSString stringWithFormat:@"note_%02ld", (long)type];
     SPNoteNode *note = [self spriteNodeWithImageNamed:imageName];
     note.position = CGPointMake(CGRectGetMidX(frame), CGRectGetMidY(frame));
@@ -21,7 +22,7 @@
     note.noteType = type;
     [note assignNoteLetterToNoteforClef:clef];
     
-    
+    //used for training mode
     if (colored) {
         
         //color the note with the corresponding color
@@ -42,210 +43,14 @@
     return note;
 }
 
-//+ (instancetype)randomLineNoteForClef:(SPClefType)clef inFrame:(CGRect)frame colored:(BOOL)colored {
-//    
-//    NSArray *noteRange;
-//    NSInteger randomNoteType;
-//    
-//    switch (clef) {
-//            
-//        case SPClefTypeTreble:
-//            
-//            noteRange = @[[NSNumber numberWithInteger:SPNoteTypeTrebleLineB],
-//                          [NSNumber numberWithInteger:SPNoteTypeTrebleLineD],
-//                          [NSNumber numberWithInteger:SPNoteTypeTrebleLineE],
-//                          [NSNumber numberWithInteger:SPNoteTypeTrebleLineF],
-//                          [NSNumber numberWithInteger:SPNoteTypeTrebleLineG]];
-//            randomNoteType = [noteRange[[SPUtil randomWithMin:0 max:noteRange.count]] integerValue];
-//            
-//            break;
-//            
-//        case SPClefTypeBass:
-//            
-//            noteRange = @[[NSNumber numberWithInteger:SPNoteTypeBassLineA],
-//                          [NSNumber numberWithInteger:SPNoteTypeBassLineB],
-//                          [NSNumber numberWithInteger:SPNoteTypeBassLineD],
-//                          [NSNumber numberWithInteger:SPNoteTypeBassLineF],
-//                          [NSNumber numberWithInteger:SPNoteTypeBassLineG]];
-//            randomNoteType = [noteRange[[SPUtil randomWithMin:0 max:noteRange.count]] integerValue];
-//            
-//        default:
-//            break;
-//    }
-//    
-//    SPNoteNode *note = [SPNoteNode noteOfType:randomNoteType forClef:clef inFrame:frame colored:colored];
-//    [note assignNoteLetterToNoteforClef:clef];
-//    return note;
-//
-//    
-//    
-//}
-//
-//+ (instancetype)randomSpaceNoteForClef:(SPClefType)clef inFrame:(CGRect)frame colored:(BOOL)colored {
-//    
-//    NSArray *noteRange;
-//    NSInteger randomNoteType;
-//    
-//    switch (clef) {
-//            
-//        case SPClefTypeTreble:
-//            
-//            noteRange = @[[NSNumber numberWithInteger:SPNoteTypeTrebleSpaceA],
-//                          [NSNumber numberWithInteger:SPNoteTypeTrebleSpaceC],
-//                          [NSNumber numberWithInteger:SPNoteTypeTrebleSpaceE],
-//                          [NSNumber numberWithInteger:SPNoteTypeTrebleSpaceF]];
-//            
-//            randomNoteType = [noteRange[[SPUtil randomWithMin:0 max:noteRange.count]] integerValue];
-//            
-//            break;
-//            
-//        case SPClefTypeBass:
-//            
-//            noteRange = @[[NSNumber numberWithInteger:SPNoteTypeBassSpaceA],
-//                          [NSNumber numberWithInteger:SPNoteTypeBassSpaceC],
-//                          [NSNumber numberWithInteger:SPNoteTypeBassSpaceE],
-//                          [NSNumber numberWithInteger:SPNoteTypeBassSpaceG]];
-//            randomNoteType = [noteRange[[SPUtil randomWithMin:0 max:noteRange.count]] integerValue];
-//            
-//        default:
-//            break;
-//    }
-//    
-//    SPNoteNode *note = [SPNoteNode noteOfType:randomNoteType forClef:clef inFrame:frame colored:colored];
-//    [note assignNoteLetterToNoteforClef:clef];
-//    return note;
-//    
-//    
-//    
-//}
-//
-//+ (instancetype)randomUpperLedgerLineNoteForClef:(SPClefType)clef inFrame:(CGRect)frame colored:(BOOL)colored {
-//    
-//    NSArray *noteRange;
-//    NSInteger randomNoteType;
-//    
-//    switch (clef) {
-//            
-//        case SPClefTypeTreble:
-//            
-//            noteRange = @[[NSNumber numberWithInteger:SPNoteTypeTrebleSpaceG],
-//                          [NSNumber numberWithInteger:SPNoteTypeTrebleUpperA],
-//                          [NSNumber numberWithInteger:SPNoteTypeTrebleUpperB],
-//                          [NSNumber numberWithInteger:SPNoteTypeTrebleUpperC],
-//                          [NSNumber numberWithInteger:SPNoteTypeTrebleUpperD],
-//                          [NSNumber numberWithInteger:SPNoteTypeTrebleUpperE],
-//                          [NSNumber numberWithInteger:SPNoteTypeTrebleUpperF],
-//                          [NSNumber numberWithInteger:SPNoteTypeTrebleUpperG]];
-//            randomNoteType = [noteRange[[SPUtil randomWithMin:0 max:noteRange.count]] integerValue];
-//            
-//            break;
-//            
-//        case SPClefTypeBass:
-//            
-//            noteRange = @[[NSNumber numberWithInteger:SPNoteTypeBassSpaceB],
-//                           [NSNumber numberWithInteger:SPNoteTypeBassUpperA],
-//                           [NSNumber numberWithInteger:SPNoteTypeBassUpperB],
-//                           [NSNumber numberWithInteger:SPNoteTypeBassUpperC],
-//                           [NSNumber numberWithInteger:SPNoteTypeBassUpperD],
-//                           [NSNumber numberWithInteger:SPNoteTypeBassUpperE],
-//                           [NSNumber numberWithInteger:SPNoteTypeBassUpperF],
-//                           [NSNumber numberWithInteger:SPNoteTypeBassUpperG]];
-//            randomNoteType = [noteRange[[SPUtil randomWithMin:0 max:noteRange.count]] integerValue];
-//            
-//        default:
-//            break;
-//    }
-//    
-//    SPNoteNode *note = [SPNoteNode noteOfType:randomNoteType forClef:clef inFrame:frame colored:colored];
-//    [note assignNoteLetterToNoteforClef:clef];
-//    return note;
-//    
-//    
-//    
-//}
-//
-//+ (instancetype)randomLowerLedgerLineNoteForClef:(SPClefType)clef inFrame:(CGRect)frame colored:(BOOL)colored {
-//    
-//    NSArray *noteRange;
-//    NSInteger randomNoteType;
-//    
-//    switch (clef) {
-//            
-//        case SPClefTypeTreble:
-//            
-//            noteRange = @[[NSNumber numberWithInteger:SPNoteTypeTrebleSpaceD],
-//                          [NSNumber numberWithInteger:SPNoteTypeTrebleLowerA],
-//                          [NSNumber numberWithInteger:SPNoteTypeTrebleLowerB],
-//                          [NSNumber numberWithInteger:SPNoteTypeTrebleLowerC],
-//                          [NSNumber numberWithInteger:SPNoteTypeTrebleLowerD],
-//                          [NSNumber numberWithInteger:SPNoteTypeTrebleLowerE],
-//                          [NSNumber numberWithInteger:SPNoteTypeTrebleLowerF],
-//                          [NSNumber numberWithInteger:SPNoteTypeTrebleLowerG]];
-//            randomNoteType = [noteRange[[SPUtil randomWithMin:0 max:noteRange.count]] integerValue];
-//            
-//            break;
-//            
-//        case SPClefTypeBass:
-//            
-//            noteRange = @[[NSNumber numberWithInteger:SPNoteTypeBassSpaceF],
-//                          [NSNumber numberWithInteger:SPNoteTypeBassLowerA],
-//                          [NSNumber numberWithInteger:SPNoteTypeBassLowerB],
-//                          [NSNumber numberWithInteger:SPNoteTypeBassLowerC],
-//                          [NSNumber numberWithInteger:SPNoteTypeBassLowerD],
-//                          [NSNumber numberWithInteger:SPNoteTypeBassLowerE],
-//                          [NSNumber numberWithInteger:SPNoteTypeBassLowerF],
-//                          [NSNumber numberWithInteger:SPNoteTypeBassLowerG]];
-//            randomNoteType = [noteRange[[SPUtil randomWithMin:0 max:noteRange.count]] integerValue];
-//            
-//        default:
-//            break;
-//    }
-//    
-//    SPNoteNode *note = [SPNoteNode noteOfType:randomNoteType forClef:clef inFrame:frame colored:colored];
-//    [note assignNoteLetterToNoteforClef:clef];
-//    return note;
-//    
-//    
-//    
-//}
-//
-//+ (instancetype)randomNoteForClef:(SPClefType)clef inFrame:(CGRect)frame colored:(BOOL)colored {
-//    
-//    NSInteger randomNoteType;
-//    
-//    switch (clef) {
-//            
-//        case SPClefTypeTreble:
-//            
-//            randomNoteType = [SPUtil randomWithMin:0 max:SPNoteTypeTrebleUpperG + 1];
-//            
-//            break;
-//            
-//        case SPClefTypeBass:
-//            
-//            randomNoteType = [SPUtil randomWithMin:0 max:SPNoteTypeTrebleUpperB + 1];
-//            
-//        default:
-//            break;
-//    }
-//    
-//    SPNoteNode *note = [SPNoteNode noteOfType:randomNoteType forClef:clef inFrame:frame colored:colored];
-//    [note assignNoteLetterToNoteforClef:clef];
-//    return note;
-//    
-//    
-//    
-//}
-//
-
-
 
 - (void)assignNoteLetterToNoteforClef:(SPClefType)clef {
 
     
-    
+    //TODO: add in tenor and alto clefs
     if (clef == SPClefTypeTreble) {
         
+        //set the note letters and their corresponding notes
         self.aNotes = @[[NSNumber numberWithInteger:SPNoteTypeTrebleLowerA],
                    [NSNumber numberWithInteger:SPNoteTypeTrebleUpperA],
                    [NSNumber numberWithInteger:SPNoteTypeTrebleSpaceA]];
@@ -327,8 +132,10 @@
                                       @"g" : self.gNotes};
     
     
+    //loop through all the note values
     for (NSArray *array in [notesDictionary allValues]) {
         
+        //assign the note its proper letter
         if ([array containsObject:[NSNumber numberWithInteger:self.noteType]]) {
             
             NSArray *keys = [notesDictionary allKeysForObject:array];

@@ -16,11 +16,13 @@
     
     if (self = [super initWithSize:size]) {
         
+        //set background color to white
         self.backgroundColor = [SKColor whiteColor];
         
         //setup scene
         SKNode *gameOverNode = [SKNode node];
         
+        //used for positioning the gameOver node
         SPGamePlayViewController *viewController = (SPGamePlayViewController *)self.view.window.rootViewController;
         gameOverNode.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame) + viewController.navigationController.navigationBar.frame.size.height + 30);
         
@@ -28,8 +30,10 @@
         //New high score
         if ([SPGameState sharedInstance].score > [SPGameState sharedInstance].highScore) {
             
-            NSLog(@"new high score!");
+            //update the high score
             [SPGameState sharedInstance].highScore = [SPGameState sharedInstance].score;
+            
+            //setup the highscore label
             SKLabelNode *gameOverHighScoreLabel = [SKLabelNode labelNodeWithFontNamed:@"Futura-CondensedMedium"];
             gameOverHighScoreLabel.name = @"GameOverHighScoreLabel";
             gameOverHighScoreLabel.text = [NSString stringWithFormat:@"High Score: %ld", (long)[SPGameState sharedInstance].highScore];
@@ -38,6 +42,7 @@
             gameOverHighScoreLabel.position = CGPointMake(0, 0);
             [gameOverNode addChild:gameOverHighScoreLabel];
             
+            //setup the retry label
             SKLabelNode *retryLabel = [SKLabelNode labelNodeWithFontNamed:@"Futura-CondensedMedium"];
             retryLabel.position = CGPointMake(0, gameOverHighScoreLabel.position.y - gameOverHighScoreLabel.frame.size.height);
             retryLabel.fontSize = 18.0;
@@ -48,9 +53,8 @@
         } else {
             
             //no new high score
-            NSLog(@"not a high score");
-            NSLog(@"score: %ld", (long)[SPGameState sharedInstance].score);
-            NSLog(@"high score: %ld", (long)[SPGameState sharedInstance].highScore);
+            
+            //setup the score label
             SKLabelNode *gameOverScoreLabel = [SKLabelNode labelNodeWithFontNamed:@"Futura-CondensedMedium"];
             gameOverScoreLabel.name = @"GameOverScoreLabel";
             gameOverScoreLabel.text = [NSString stringWithFormat:@"Score: %ld", (long)[SPGameState sharedInstance].score];
@@ -59,6 +63,7 @@
             gameOverScoreLabel.position = CGPointMake(0, 0);
             [gameOverNode addChild:gameOverScoreLabel];
             
+            //setup the high score label
             SKLabelNode *gameOverHighScoreLabel = [SKLabelNode labelNodeWithFontNamed:@"Futura-CondensedMedium"];
             gameOverHighScoreLabel.name = @"GameOverScoreLabel";
             gameOverHighScoreLabel.text = [NSString stringWithFormat:@"High Score: %ld", (long)[SPGameState sharedInstance].highScore];
@@ -67,6 +72,7 @@
             gameOverHighScoreLabel.position = CGPointMake(gameOverScoreLabel.position.x, gameOverScoreLabel.position.y - gameOverScoreLabel.frame.size.height - 10);
             [gameOverNode addChild:gameOverHighScoreLabel];
             
+            //setup the retry label
             SKLabelNode *retryLabel = [SKLabelNode labelNodeWithFontNamed:@"Futura-CondensedMedium"];
             retryLabel.position = CGPointMake(0, gameOverHighScoreLabel.position.y - gameOverHighScoreLabel.frame.size.height);
             retryLabel.fontSize = 18.0;
@@ -78,7 +84,9 @@
         
         [self addChild:gameOverNode];
         
+        //save the high score
         [[SPGameState sharedInstance] save];
+        //reset the lives and score
         [[SPGameState sharedInstance] reset];
   
         
@@ -89,6 +97,7 @@
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
     
+    //restarts the challenge
     //Configure the view.
     SKView *skView = (SKView *)self.view;
     skView.showsFPS = YES;

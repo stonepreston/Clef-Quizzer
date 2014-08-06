@@ -10,11 +10,8 @@
 		3A10B89319911EB2006CDFE3 /* SPGamePlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A10B89219911EB2006CDFE3 /* SPGamePlayViewController.m */; };
 		3A25D0CA1991D53D00D3FE87 /* SPChallengeOverScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A25D0C91991D53D00D3FE87 /* SPChallengeOverScene.m */; };
 		3A7D6C0519913381002D35FA /* SPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7D6C0419913381002D35FA /* SPNavigationController.m */; };
-		3ACAF44819868E700042285D /* SPTitleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACAF44719868E700042285D /* SPTitleScene.m */; };
 		3ACAF44B198698370042285D /* AGSpriteButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACAF44A198698370042285D /* AGSpriteButton.m */; };
-		3ACAF44E19869BCB0042285D /* SPNoteRangeScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACAF44D19869BCB0042285D /* SPNoteRangeScene.m */; };
 		3ACAF4511986A0130042285D /* SPLabelButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACAF4501986A0130042285D /* SPLabelButton.m */; };
-		3ACAF4541987EFE90042285D /* SPModeScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACAF4531987EFE90042285D /* SPModeScene.m */; };
 		3ACAF45A198893170042285D /* SPTrainingScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACAF459198893170042285D /* SPTrainingScene.m */; };
 		3ACAF45D19889F060042285D /* SPPracticeScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACAF45C19889F060042285D /* SPPracticeScene.m */; };
 		3ACAF4601988A3F70042285D /* SPChallengeScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACAF45F1988A3F70042285D /* SPChallengeScene.m */; };
@@ -62,16 +59,10 @@
 		3A25D0C91991D53D00D3FE87 /* SPChallengeOverScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPChallengeOverScene.m; sourceTree = "<group>"; };
 		3A7D6C0319913381002D35FA /* SPNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPNavigationController.h; sourceTree = "<group>"; };
 		3A7D6C0419913381002D35FA /* SPNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPNavigationController.m; sourceTree = "<group>"; };
-		3ACAF44619868E700042285D /* SPTitleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTitleScene.h; sourceTree = "<group>"; };
-		3ACAF44719868E700042285D /* SPTitleScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTitleScene.m; sourceTree = "<group>"; };
 		3ACAF449198698370042285D /* AGSpriteButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGSpriteButton.h; sourceTree = "<group>"; };
 		3ACAF44A198698370042285D /* AGSpriteButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGSpriteButton.m; sourceTree = "<group>"; };
-		3ACAF44C19869BCB0042285D /* SPNoteRangeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPNoteRangeScene.h; sourceTree = "<group>"; };
-		3ACAF44D19869BCB0042285D /* SPNoteRangeScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPNoteRangeScene.m; sourceTree = "<group>"; };
 		3ACAF44F1986A0130042285D /* SPLabelButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPLabelButton.h; sourceTree = "<group>"; };
 		3ACAF4501986A0130042285D /* SPLabelButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPLabelButton.m; sourceTree = "<group>"; };
-		3ACAF4521987EFE90042285D /* SPModeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPModeScene.h; sourceTree = "<group>"; };
-		3ACAF4531987EFE90042285D /* SPModeScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPModeScene.m; sourceTree = "<group>"; };
 		3ACAF458198893170042285D /* SPTrainingScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTrainingScene.h; path = ../SPTrainingScene.h; sourceTree = "<group>"; };
 		3ACAF459198893170042285D /* SPTrainingScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPTrainingScene.m; path = ../SPTrainingScene.m; sourceTree = "<group>"; };
 		3ACAF45B19889F060042285D /* SPPracticeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPPracticeScene.h; sourceTree = "<group>"; };
@@ -199,12 +190,6 @@
 				3ACAF45F1988A3F70042285D /* SPChallengeScene.m */,
 				3ACB04351980239600C1DE8C /* SPGamePlayScene.h */,
 				3ACB04361980239600C1DE8C /* SPGamePlayScene.m */,
-				3ACAF44619868E700042285D /* SPTitleScene.h */,
-				3ACAF44719868E700042285D /* SPTitleScene.m */,
-				3ACAF44C19869BCB0042285D /* SPNoteRangeScene.h */,
-				3ACAF44D19869BCB0042285D /* SPNoteRangeScene.m */,
-				3ACAF4521987EFE90042285D /* SPModeScene.h */,
-				3ACAF4531987EFE90042285D /* SPModeScene.m */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -399,10 +384,8 @@
 				3ACAF4631988AA480042285D /* SPChallengeHud.m in Sources */,
 				3ACB04081980236D00C1DE8C /* main.m in Sources */,
 				3ACAF475198FF1CE0042285D /* SPModeViewController.m in Sources */,
-				3ACAF44819868E700042285D /* SPTitleScene.m in Sources */,
 				3ACAF44B198698370042285D /* AGSpriteButton.m in Sources */,
 				3A25D0CA1991D53D00D3FE87 /* SPChallengeOverScene.m in Sources */,
-				3ACAF44E19869BCB0042285D /* SPNoteRangeScene.m in Sources */,
 				3ACAF45A198893170042285D /* SPTrainingScene.m in Sources */,
 				3ACB04371980239600C1DE8C /* SPGamePlayScene.m in Sources */,
 				3ACAF4601988A3F70042285D /* SPChallengeScene.m in Sources */,
@@ -413,7 +396,6 @@
 				3ACAF472198FDD3F0042285D /* SPGameState.m in Sources */,
 				3ACAF46F198FC7D70042285D /* SPNotesViewController.m in Sources */,
 				3ACAF46C198FBB670042285D /* SPClefViewController.m in Sources */,
-				3ACAF4541987EFE90042285D /* SPModeScene.m in Sources */,
 				3ACB040C1980236D00C1DE8C /* SPAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

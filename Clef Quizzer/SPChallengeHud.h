@@ -14,13 +14,13 @@
 //displays the score
 @property (nonatomic) SKLabelNode *scoreLabel;
 
-@property (nonatomic) NSInteger score;
-@property (nonatomic) NSInteger lives;
-
+//creates the challenge hud
 + (instancetype)challengeHudAtPosition:(CGPoint)position inClef:(SPClefType)clef inFrame:(CGRect)frame;
 
+//removes one life, the bool return type is used in testing for game over
 - (BOOL)loseLife;
 
+//adds points to the users score
 - (void)addPoints;
 
 @end

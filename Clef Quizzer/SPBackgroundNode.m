@@ -12,6 +12,7 @@
 
 + (instancetype)backgroundWithClefOfType:(SPClefType)type atPosition:(CGPoint)position {
     
+    //TODO: add in tenor and alto clefs
     SPBackgroundNode *background;
     if (type == SPClefTypeTreble) {
       

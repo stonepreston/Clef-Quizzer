@@ -10,11 +10,13 @@
 
 @implementation SPUtil
 
+//generates a random integer within a given range
 + (NSInteger)randomWithMin:(NSInteger)min max:(NSInteger)max {
     
     return arc4random()%(max-min) + min;
 }
 
+//used to determine which note letter should be what color
 + (NSDictionary *)colors {
     
     static NSDictionary *colors = nil;
@@ -31,6 +33,7 @@
     return colors;
 }
 
+//the note letters 
 + (NSArray *)notes {
     
     static NSArray *notes = nil;

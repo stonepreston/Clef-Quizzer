@@ -48,8 +48,13 @@
         //add points
         [self.challengeHud addPoints];
         
+        //remove the current note
         [self.currentNote removeFromParent];
+        
+        //add a new one
         self.currentNote = [self generateNote];
+        
+        //setup the correct label
         self.correctOrIncorrectLabel.text = @"Correct!";
         self.correctOrIncorrectLabel.fontColor = [UIColor colorWithRed:56.0/255.0 green:180.0/255.0 blue:73.0/255.0 alpha:1.0];
         [self animateCorrectOrIncorrectLabel:self.correctOrIncorrectLabel];
@@ -59,6 +64,7 @@
         
         //incorrect
         
+        //setup the incorrect label
         self.correctOrIncorrectLabel.text = @"Incorrect!";
         self.correctOrIncorrectLabel.fontColor = [UIColor redColor];
         [self animateCorrectOrIncorrectLabel:self.correctOrIncorrectLabel];

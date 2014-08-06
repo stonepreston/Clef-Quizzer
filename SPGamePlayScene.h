@@ -24,14 +24,19 @@
 // the note currently being displayed
 @property (nonatomic) SPNoteNode *currentNote;
 
+//creates the scene
 - (id)initWithSize:(CGSize)size colored:(BOOL)colored;
 
+//generates a random note
 - (SPNoteNode *)generateNote;
 
+//called when a button is tapped
 - (void)buttonPressed:(id)sender;
 
+//checks the users answer
 - (BOOL)checkNoteForButton:(AGSpriteButton *)button;
 
+//animates the correct/incorrect label (fades in and out)
 - (void)animateCorrectOrIncorrectLabel:(SKLabelNode *)label;
 
 @end

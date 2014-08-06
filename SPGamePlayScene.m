@@ -9,7 +9,7 @@
 #import "SPGamePlayScene.h"
 #import "SPBackgroundNode.h"
 #import "SPLabelButton.h"
-#import "SPModeScene.h"
+
 
 
 @interface SPGamePlayScene ()
@@ -26,27 +26,35 @@
     
     if (self = [super initWithSize:size]) {
         /* Setup your scene here */
+        
+        //the colored BOOL determines whether or not to color the buttons and notes
         self.colored = colored;
         self.backgroundColor = [SKColor whiteColor];
         
         
+        //TODO add tenor and alto background code
         if ([SPGameState sharedInstance].clef == SPClefTypeTreble) {
             
+            //setup the treble background
             SPBackgroundNode *trebleBackground = [SPBackgroundNode backgroundWithClefOfType:SPClefTypeTreble atPosition:CGPointMake(0, CGRectGetMidY(self.frame))];
             [self addChild:trebleBackground];
             
         } else {
             
+            //setup the bass background
             SPBackgroundNode *bassBackground = [SPBackgroundNode backgroundWithClefOfType:SPClefTypeBass atPosition:CGPointMake(0, CGRectGetMidY(self.frame))];
             
             [self addChild:bassBackground];
             
         }
         
+        //adds the correct or incorrect label (its opacity is 0 to start with)
         self.correctOrIncorrectLabel = [self addCorrectOrIncorrectLabel];
         
+        //adds all the buttons to the scene
         [self addButtons];
         
+        //generates the first note
         self.currentNote = [self generateNote];
         
        
@@ -59,7 +67,7 @@
 
 - (NSArray *)noteTypeNumbers {
     
-    //array of note ranges has not been populated yet, generate it using the noteRange numbers stored in the game state
+    //if an array of note ranges has not been populated yet, generate it using the noteRange numbers stored in the game state
     if (_noteTypeNumbers == nil) {
         
         _noteTypeNumbers = [NSArray arrayWithArray:[self generateNoteTypesForNoteRanges:[SPGameState sharedInstance].noteRangeNumbers]];
@@ -70,6 +78,7 @@
 }
 
 
+//generates the range of notes to be randomly selected depending on the ranges the user selected
 - (NSMutableArray *)generateNoteTypesForNoteRanges:(NSMutableSet *)noteRanges  {
     
     NSMutableArray *noteTypes = [[NSMutableArray alloc] init];
@@ -148,6 +157,7 @@
     
 }
 
+//generates a random note
 - (SPNoteNode *)generateNote {
     
     SPNoteNode *note;
@@ -171,7 +181,7 @@
 }
 
 
-
+//adds the buttons to the scene
 - (void)addButtons {
     
     NSArray *notes = [SPUtil notes];
@@ -193,14 +203,14 @@
         
         if (self.colored) {
             
-            
+            //use the colors array to determine the color it needs to be
             button.color = [[SPUtil colors] objectForKey:notes[i]];
             button.colorBlendFactor = 1.0;
             
             
         } else {
             
-            //color the buttons black for challenge mode
+            //color the buttons black for non training modes
             button.color = [SKColor blackColor];
             button.colorBlendFactor = 1.0;
             
@@ -217,16 +227,21 @@
     
 }
 
+//called when a user taps a button
 - (void)buttonPressed:(id)sender {
     
-    //remove current note from screen and add a new one
+    
     AGSpriteButton *button = (AGSpriteButton *)sender;
     
+    //check the users answer
     if ([self checkNoteForButton:button]) {
         
         //correct
+        //remove current note from screen and add a new one
         [self.currentNote removeFromParent];
         self.currentNote = [self generateNote];
+        
+        //setup correct label
         self.correctOrIncorrectLabel.text = @"Correct!";
         self.correctOrIncorrectLabel.fontColor = [UIColor colorWithRed:56.0/255.0 green:180.0/255.0 blue:73.0/255.0 alpha:1.0];
         [self animateCorrectOrIncorrectLabel:self.correctOrIncorrectLabel];
@@ -239,7 +254,7 @@
         
         //incorrect
         
-        
+        //setup incorrect label
         self.correctOrIncorrectLabel.text = @"Incorrect!";
         self.correctOrIncorrectLabel.fontColor = [UIColor redColor];
         [self animateCorrectOrIncorrectLabel:self.correctOrIncorrectLabel];
@@ -251,6 +266,7 @@
     
 }
 
+//checks the users answer to see if he was correct
 - (BOOL)checkNoteForButton:(AGSpriteButton *)button {
     
     NSArray *letters = @[@"a",
@@ -275,8 +291,10 @@
     
 }
 
+//adds the correct/incorrect label to the scene
 - (SKLabelNode *)addCorrectOrIncorrectLabel {
     
+    //setup the label
     SKLabelNode *correctOrIncorrectLabel = [SKLabelNode labelNodeWithFontNamed:@"Futura-CondensedMedium"];
     correctOrIncorrectLabel.position = CGPointMake(self.frame.size.width - 150, 90);
     correctOrIncorrectLabel.fontColor = [UIColor colorWithRed:56.0/255.0 green:180.0/255.0 blue:73.0/255.0 alpha:1.0];
@@ -289,6 +307,8 @@
 
 }
 
+
+//fades the label in and out
 - (void)animateCorrectOrIncorrectLabel:(SKLabelNode *)label {
 
     SKAction *fadeIn = [SKAction fadeInWithDuration:.5];

@@ -8,12 +8,16 @@
 
 @interface SPClefViewController : UIViewController
 
+//called when the user selects the treble clef button
 - (IBAction)trebleClefButtonPressed:(id)sender;
 
+//called when the user selects the bass clef button
 - (IBAction)bassClefButtonPressed:(id)sender;
 
+//called when the user selects the tenor clef button
 - (IBAction)tenorClefButtonPressed:(id)sender;
 
+//called when the user selects the alto clef button
 - (IBAction)altoClefButtonPressed:(id)sender;
 
 @end

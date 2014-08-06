@@ -8,18 +8,22 @@
 
 #import <Foundation/Foundation.h>
 
+//used the determine which note letter is which color
 extern NSDictionary *const colors;
 
+//how far apart to space the buttons
 static const float SPButtonPadding = 25.0;
 
-static const float SPMenuButtonPadding = 45.0;
-
+//max number of lives in challenge mode
 static const NSInteger SPMaxLives = 3;
 
+//points awarded to user for correct answer in challenge mode
 static const NSInteger SPPointsPerCorrectAnswer = 100;
 
+//used in SPGameState to save highscore
 static NSString* const SPGameStateHighScoreKey = @"highScore";
 
+//modes
 typedef NS_ENUM(NSInteger, SPMode) {
     
     SPModeTraining,
@@ -27,6 +31,7 @@ typedef NS_ENUM(NSInteger, SPMode) {
     SPModeChallenge
 };
 
+//note ranges
 typedef NS_ENUM(NSInteger, SPNoteRange) {
     
     SPNoteRangeLines,
@@ -35,6 +40,7 @@ typedef NS_ENUM(NSInteger, SPNoteRange) {
     SPNoteRangeLowerLedgerLines
 };
 
+//button types
 typedef NS_ENUM(NSInteger, SPButtonType) {
     
     SPButtonTypeA,
@@ -46,6 +52,7 @@ typedef NS_ENUM(NSInteger, SPButtonType) {
     SPButtonTypeG
 };
 
+//treble note types
 typedef NS_ENUM(NSInteger, SPNoteTypeTreble) {
     
     SPNoteTypeTrebleLowerD,
@@ -77,6 +84,8 @@ typedef NS_ENUM(NSInteger, SPNoteTypeTreble) {
     
 };
 
+
+//bass note types
 typedef NS_ENUM(NSInteger, SPNoteTypeBass) {
     
     SPNoteTypeBassLowerF,
@@ -107,6 +116,9 @@ typedef NS_ENUM(NSInteger, SPNoteTypeBass) {
 
 };
 
+//TODO: add tenor and alto note type enums
+
+//clefs
 typedef NS_ENUM(NSInteger, SPClefType) {
     
     SPClefTypeTreble,
@@ -119,10 +131,13 @@ typedef NS_ENUM(NSInteger, SPClefType) {
 
 @interface SPUtil : NSObject
 
+//returns the colors dictionary
 + (NSDictionary *)colors;
 
+//returns the array of note letters
 + (NSArray *)notes;
 
+//generates a radom integer
 + (NSInteger)randomWithMin:(NSInteger)min max:(NSInteger)max;
 
 @end

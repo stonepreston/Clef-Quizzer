@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface SPModeViewController : UIViewController
+
+//Button IBActions
 - (IBAction)trainingButtonPressed:(id)sender;
 - (IBAction)practiceButtonPressed:(id)sender;
 - (IBAction)challengeButtonPressed:(id)sender;

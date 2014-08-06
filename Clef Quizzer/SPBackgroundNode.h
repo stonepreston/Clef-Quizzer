@@ -11,6 +11,7 @@
 
 @interface SPBackgroundNode : SKSpriteNode
 
+//creates a background node
 + (instancetype)backgroundWithClefOfType:(SPClefType)type atPosition:(CGPoint)position;
 
 @end
