@@ -37,9 +37,6 @@
         note.colorBlendFactor = 1.0;
     }
     
-    
-
-    
     return note;
 }
 

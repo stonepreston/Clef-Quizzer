@@ -10,4 +10,6 @@
 
 @interface SPGamePlayViewController : UIViewController
 
+- (IBAction)doneButtonPressed:(id)sender;
+
 @end

@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "SPUtil.h"
 
-@interface SPGameState : NSObject <NSCoding>
+@interface SPGameState : NSObject 
 
 //stores the selected clef
 @property (nonatomic) SPClefType clef;
@@ -23,8 +23,7 @@
 //keeps track of the users lives in challenge mode
 @property (nonatomic) NSInteger lives;
 
-//keeps track of the users highscore in challenge mode. this persists after app close
-@property (nonatomic) NSInteger highScore;
+
 
 //keeps track of the users score in challenge mode
 @property (nonatomic) NSInteger score;
@@ -35,8 +34,7 @@
 //used to load the highscore from memory and create the instace
 + (instancetype)loadInstance;
 
-//saves the highscore
-- (void)save;
+
 
 //resets the score and lives
 - (void)reset;

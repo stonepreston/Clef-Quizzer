@@ -24,6 +24,7 @@
         
     }
     
+    //left align background
     background.anchorPoint = CGPointMake(0, .5);
     background.position = position;
     return background;

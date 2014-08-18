@@ -10,22 +10,26 @@
 	<string>Clef Quizzer</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>0360ECDA0FD9F14BDE4D62BAAE487824356C31B7</key>
+		<string>https://github.com/stonepreston/Clef-Quizzer.git</string>
 		<key>147BE46F-F1D7-4C58-8B9F-C1C14C5060AB</key>
 		<string>https://github.com/stonepreston/Clef-Quizzer.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Clef Quizzer.xcodeproj/project.xcworkspace</string>
+	<string>Clef Quizzer.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>147BE46F-F1D7-4C58-8B9F-C1C14C5060AB</key>
+		<key>0360ECDA0FD9F14BDE4D62BAAE487824356C31B7</key>
 		<string>../..</string>
+		<key>147BE46F-F1D7-4C58-8B9F-C1C14C5060AB</key>
+		<string>../../../Clef Quizzer</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/stonepreston/Clef-Quizzer.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>147BE46F-F1D7-4C58-8B9F-C1C14C5060AB</string>
+	<string>0360ECDA0FD9F14BDE4D62BAAE487824356C31B7</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -35,6 +39,14 @@
 			<string>147BE46F-F1D7-4C58-8B9F-C1C14C5060AB</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Clef Quizzer</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0360ECDA0FD9F14BDE4D62BAAE487824356C31B7</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Clef%20Quizzer</string>
 		</dict>
 	</array>
 </dict>

@@ -25,7 +25,7 @@
         
         //reset lives and score
         [[SPGameState sharedInstance] reset];
-        self.challengeHud = [SPChallengeHud challengeHudAtPosition:CGPointMake(0, self.frame.size.height - 20) inClef:[SPGameState sharedInstance].clef inFrame:self.frame];
+        self.challengeHud = [SPChallengeHud challengeHudAtPosition:CGPointMake(0, self.frame.size.height - 30) inClef:[SPGameState sharedInstance].clef inFrame:self.frame];
         [self addChild:self.challengeHud];
         
        

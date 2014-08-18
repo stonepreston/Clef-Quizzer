@@ -51,9 +51,7 @@
 //handles the button presses
 - (void)handleClefButtonPressedForClef:(SPClefType)clef {
     
-    //new clef selected, clear the note range
-    [[SPGameState sharedInstance].noteRangeNumbers removeAllObjects];
-    
+
     //set the new clef
     [SPGameState sharedInstance].clef = clef;
     

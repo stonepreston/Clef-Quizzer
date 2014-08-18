@@ -299,7 +299,7 @@
                     <navigationItem key="navigationItem" title="Mode" id="MiQ-tb-4TK"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <segue destination="XHH-4p-ncL" kind="push" identifier="showGamePlay" id="Y1I-k6-MBJ"/>
+                        <segue destination="XHH-4p-ncL" kind="modal" identifier="showGamePlay" id="Y1I-k6-MBJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yl4-mx-R1x" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -315,9 +315,25 @@
                         <viewControllerLayoutGuide type="bottom" id="Nef-aw-gEZ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="KBE-BB-6Cj" customClass="SKView">
-                        <rect key="frame" x="0.0" y="44" width="480" height="276"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dsn-fP-f4b">
+                                <rect key="frame" x="20" y="0.0" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneButtonPressed:" destination="XHH-4p-ncL" eventType="touchUpInside" id="ahC-Ez-v4p"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Dsn-fP-f4b" firstAttribute="top" secondItem="LEg-WS-em2" secondAttribute="bottom" id="1Fh-yK-X5G"/>
+                            <constraint firstItem="Dsn-fP-f4b" firstAttribute="leading" secondItem="KBE-BB-6Cj" secondAttribute="leading" constant="20" id="Y2L-u4-2cr"/>
+                        </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>

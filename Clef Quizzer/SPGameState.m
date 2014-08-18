@@ -14,28 +14,23 @@
 
 +(instancetype)loadInstance
 {
-    //get the saved data from the file
-    NSData* decodedData = [NSData dataWithContentsOfFile: [SPGameState filePath]];
     
-    //if there was data
-    if (decodedData) {
         
-        //load the game state
-        SPGameState *gameState = [NSKeyedUnarchiver unarchiveObjectWithData:decodedData];
-        
-        //initialize the score, lives, and note range
-        gameState.score = 0;
-        gameState.lives = SPMaxLives;
-        gameState.noteRangeNumbers = [[NSMutableSet alloc] init];
-        return gameState;
-    }
-    
-    //if there was no saved state
+    //load the game state
     SPGameState *gameState = [[SPGameState alloc] init];
+    
+    //initialize the score, lives, and note range
     gameState.score = 0;
     gameState.lives = SPMaxLives;
     gameState.noteRangeNumbers = [[NSMutableSet alloc] init];
+    
+    
+    
+    
     return gameState;
+    
+    
+    
 }
 
 //returns a singleton game state object
@@ -50,42 +45,7 @@
     return sharedInstance;
 }
 
-- (instancetype)initWithCoder:(NSCoder *)decoder
-{
-    self = [self init];
-    if (self) {
-        self.highScore = [decoder decodeIntegerForKey: SPGameStateHighScoreKey];
-        
-        
-    }
-    return self;
-}
 
-- (void)encodeWithCoder:(NSCoder *)encoder
-{
-    [encoder encodeInteger:self.highScore forKey:SPGameStateHighScoreKey];
-    
-}
-
-
-//used the get the file path of the saved data
-+(NSString*)filePath
-{
-    static NSString* filePath = nil;
-    if (!filePath) {
-        filePath =
-        [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]
-         stringByAppendingPathComponent:@"gamedata"];
-    }
-    return filePath;
-}
-
-//saves the highscore to disk
-- (void)save {
-    
-    NSData* encodedData = [NSKeyedArchiver archivedDataWithRootObject: self];
-    [encodedData writeToFile:[SPGameState filePath] atomically:YES];
-}
 
 //resets the score and lives
 - (void)reset {

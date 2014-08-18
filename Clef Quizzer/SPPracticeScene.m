@@ -21,7 +21,7 @@
         /* Setup your scene here */
         
         //creates the practice hud that shows the number correct and incorrect
-        self.practiceHud = [SPPracticeHud practiceHudAtPosition:CGPointMake(0, self.frame.size.height - 20) inClef:[SPGameState sharedInstance].clef inFrame:self.frame];
+        self.practiceHud = [SPPracticeHud practiceHudAtPosition:CGPointMake(0, self.frame.size.height - 10) inClef:[SPGameState sharedInstance].clef inFrame:self.frame];
         [self addChild:self.practiceHud];
         
 

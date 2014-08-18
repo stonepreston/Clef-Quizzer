@@ -128,7 +128,7 @@
         //add all the upper Ledger line noteType numbers to the noteTypeSet
         if ([noteRangeNumber integerValue] == SPNoteRangeUpperLedgerLines) {
             
-            //upper ledger lines start at 17. they are every odd number up to and including 24
+            //upper ledger lines start at 17. they are every number up to and including 24
             for (NSInteger i = 17; i < 25; i++) {
                 
                 [noteTypes addObject:[NSNumber numberWithInteger:i]];
@@ -139,7 +139,7 @@
         //add all the Lower Ledger line noteType numbers to the noteTypeSet
         if ([noteRangeNumber integerValue] == SPNoteRangeLowerLedgerLines) {
             
-            //upper ledger lines start at 0. they are every odd number up to and including 7
+            //lower ledger lines start at 0. they are every number up to and including 7
             for (NSInteger i = 0; i < 8; i++) {
                 
                 [noteTypes addObject:[NSNumber numberWithInteger:i]];
@@ -197,7 +197,7 @@
         AGSpriteButton *button = [AGSpriteButton buttonWithTexture:normal];
         button.anchorPoint = CGPointMake(0, .5);
         button.name = [NSString stringWithFormat:@"%@_button", notes[i]];
-        button.position = CGPointMake(startingX, 38);
+        button.position = CGPointMake(startingX, 30);
         button.zPosition = 20;
         button.buttonType = (SPButtonType)i;
         
@@ -244,11 +244,7 @@
         //setup correct label
         self.correctOrIncorrectLabel.text = @"Correct!";
         self.correctOrIncorrectLabel.fontColor = [UIColor colorWithRed:56.0/255.0 green:180.0/255.0 blue:73.0/255.0 alpha:1.0];
-        [self animateCorrectOrIncorrectLabel:self.correctOrIncorrectLabel];
-        
-        
-        
-        
+
         
     } else {
         
@@ -257,9 +253,12 @@
         //setup incorrect label
         self.correctOrIncorrectLabel.text = @"Incorrect!";
         self.correctOrIncorrectLabel.fontColor = [UIColor redColor];
-        [self animateCorrectOrIncorrectLabel:self.correctOrIncorrectLabel];
+        
         
     }
+    
+    //animate the label
+    [self animateCorrectOrIncorrectLabel:self.correctOrIncorrectLabel];
     
     
     
@@ -310,18 +309,22 @@
 
 //fades the label in and out
 - (void)animateCorrectOrIncorrectLabel:(SKLabelNode *)label {
-
+    
+    
     SKAction *fadeIn = [SKAction fadeInWithDuration:.5];
     SKAction *wait = [SKAction waitForDuration:.5];
     SKAction *fadeOut = [SKAction fadeOutWithDuration:.5];
     
-    
+    //remove all actions currently running on the label (this cancels any actions so the fade can start fresh from whatever opacity it was previously at
+    [label removeAllActions];
+    //run the actions when the user taps
     NSArray *sequence = @[fadeIn, wait, fadeOut];
-        
     [label runAction:[SKAction sequence:sequence]];
- 
+    
     
 }
+
+
 
 
 
